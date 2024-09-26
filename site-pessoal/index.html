@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas W.</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Esconder todas as seções inicialmente */
+        section {
+            display: none;
+        }
+
+        /* Exibir a seção ativa */
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" onclick="showSection('sobre-mim')">Sobre mim</a> <!-- Exibe a seção Sobre mim -->
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('formacao')">Formação</a> <!-- Exibe a seção Formação -->
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('cursos')">Cursos</a> <!-- Exibe a seção Cursos -->
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('carreira')">Carreira</a> <!-- Exibe a seção Carreira -->
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div class="center">
+                <img src="./img/Lucas.png" alt="Foto de Lucas"></img>
+            </div>
+            <h1>Lucas Wesendonck</h1>
+            <h2>Assistente de Suporte</h2>
+        </header>
+
+        <main>
+            <section id="sobre-mim" class="active"> 
+                <h3>Sobre mim</h3>
+                <p>
+                    Me chamo Lucas Wesendonck sou um entusiasta da tecnologia,tenho 24 anos de idade, sempre buscando novas formas de expandir meu conhecimento e explorar as inovações que o setor oferece. 
+                    <br> 
+                    <br> 
+                    Com um forte interesse por desenvolvimento tecnológico e inovação digital, acredito que a tecnologia tem o poder de transformar não só empresas, mas também a forma como vivemos e trabalhamos. Meu objetivo é construir uma carreira que me permita atuar remotamente, em home office, de forma eficiente e colaborativa, contribuindo com soluções criativas e impactantes para os desafios do dia a dia.
+
+Possuo um perfil dinâmico e estou constantemente me aprimorando, seja por meio de estudos, cursos ou projetos. Gosto de me manter atualizado sobre as últimas tendências do mercado, desde novas ferramentas tecnológicas até práticas de gestão de equipes remotas. Valorizo a flexibilidade e a autonomia que o trabalho remoto proporciona, permitindo um equilíbrio entre produtividade e qualidade de vida.
+                </p>
+            </section>
+
+            <section id="formacao">
+                <h3>Formação</h3>
+                <p>
+                    Terminei meu ensino médio no Colégio Estadual Carneiro de Campos e atualmente estou cursando a gradução de Bacharel em Ciência da Computação na Universidade Atitus, com previsão de conclusão no primeiro semestre de 2025.
+                </p>
+                <img src="./img/logoAtitus.jpg" alt="Imagem representativa da formação" style="width: 300px; height: auto;">
+            </section>
+
+            <section id="cursos">
+                <h3>Cursos</h3>
+                <p>
+                    Realizei os seguintes cursos a longo da minha jornada acadêmica:</p>
+                    Workshop de Desenvolvimento de Jogos para Dispositivos Móveis</p>
+                    Data: 06 de março de 2024</p>
+                    Local: Universidade Tecnológica Federal do Paraná - Campus Pato Branco</p>
+                    </p>
+                    <br>
+                    PPGA Talks: Cultura Organizacional para Inovação IMED</p>
+                    Data: 13 de junho de 2024</p>
+                    Local: Passo Fundo</p>
+                    <br>
+                    AWS Academy Graduate - AWS Academy Introduction to Cloud Semester 1</p>        
+                    Emitido por: Amazon Web Services (AWS)</p>
+                    Data da Verificação: Junho de 2024</p>
+                </p>
+            </section>
+
+            <section id="carreira">
+                <h3>Carreira</h3>
+                <p> Minhas experiências profissionais até o momento:</p>
+                    Técnico de Controle de Produção
+                    Empresa:MaxiPlast Embalagens</p>
+                    Período: Maio de 2020 - Julho de 2023 (3 anos e 3 meses)</p>
+                    Atribuições do cargo:</p>
+                    Trabalhou em conformidade com normas e procedimentos técnicos.</p>
+                    Realizou apontamento da produção, assegurando qualidade e confiabilidade das informações.</p>
+                    Utilizou sistemas ERP da Senior Sistemas e Iniflex da Projedata para gestão de produção.
+                    </p>
+                    <img src="./img/maxiplast.png" alt="Imagem maxiplast" style="width: 300px; height: auto;">
+                    </p>
+                    Assistente de Suporte/Atendimento
+                    Empresa:Net Onze Provedor De Acesso A Internet Ltda</p>
+                    Período:Julho de 2023 - Presente (1 ano e 3 meses)</p>
+
+                    Atribuições do cargo:</p>
+                    Atendimento ao cliente via telefone e WhatsApp.</p>
+                    Conferência de sinal de internet e telefone.</p>
+                    Instrução de clientes sobre serviços de internet, incluindo roteadores, configuração de equipamentos e planos de internet</p>
+                    <img src="./img/net11.png" alt="Imagem net11" style="width: 300px; height: auto;">
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://github.com/Wesendonck" target="_blank" rel="noopener noreferrer">
+                <img src="./img/github.svg" alt="Ícone do Github"></img>
+                <p>Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-wesendonck-34826b200/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/linkedin.svg" alt="Ícone do LinkedIn"></img>
+                <p>Linkedin</p>
+            </a>
+        </footer>
+    </div>
+
+    <script>
+        // Função para mostrar apenas a seção escolhida e esconder as outras
+        function showSection(sectionId) {
+            // Esconde todas as seções
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active'); // Remove a classe 'active'
+            });
+
+            // Exibe a seção selecionada
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active'); // Adiciona a classe 'active' para mostrar
+        }
+    </script>
+
+</body>
+
+</html>

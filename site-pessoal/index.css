@@ -1,0 +1,134 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    flex-wrap: wrap; /* Permite que o menu se ajuste em telas menores */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #5BBE42;
+}
+
+.center {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #5BBE42;
+    text-align: center; /* Centraliza os títulos */
+}
+
+p {
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Faz o rodapé quebrar em várias linhas, se necessário */
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+.container {
+    padding: 0px 100px; 
+    max-width: 1200px; 
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #5BBE42;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; /* Coloca o menu em coluna */
+        align-items: center;
+    }
+
+    .container {
+        padding: 0px 20px; /* Menor padding em telas pequenas */
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0px 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    footer a {
+        margin: 10px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+}
