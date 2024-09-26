@@ -1,1 +1,1 @@
-Este Projeto trata-se basicamente de um site pessoal que tem como objetivo demonstrar os conhecimentos adquiridos durante uma disciplina o mesmo é desenvolvido para uma disciplina Eletiva de Tópicos especiais em programação.
+Este Projeto trata-se basicamente de um site pessoal que tem como objetivo demonstrar os conhecimentos adquiridos durante uma disciplina o mesmo é desenvolvido para a disciplina Eletiva de Tópicos especiais em programação.
